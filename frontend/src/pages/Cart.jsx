@@ -73,7 +73,7 @@ export default function Cart() {
               {/* Subtotal */}
               <div className="hidden sm:flex flex-col items-end justify-center">
                 <span className="text-xs text-dark-500 mb-1">Subtotal</span>
-                <span className="text-lg font-bold text-white">${item.subtotal?.toFixed(2)}</span>
+                <span className="text-lg font-bold text-white">₹{item.subtotal?.toFixed(2)}</span>
               </div>
             </div>
           ))}
@@ -87,7 +87,7 @@ export default function Cart() {
             <div className="space-y-3 mb-6">
               <div className="flex justify-between text-sm">
                 <span className="text-dark-400">Subtotal ({cartCount} items)</span>
-                <span className="text-dark-200">${cart.totalPrice?.toFixed(2)}</span>
+                <span className="text-dark-200">₹{cart.totalPrice?.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-dark-400">Shipping</span>
@@ -96,7 +96,7 @@ export default function Cart() {
               <hr className="border-dark-700/50" />
               <div className="flex justify-between">
                 <span className="text-base font-semibold text-white">Total</span>
-                <span className="text-xl font-bold gradient-text">${cart.totalPrice?.toFixed(2)}</span>
+                <span className="text-xl font-bold gradient-text">₹{cart.totalPrice?.toFixed(2)}</span>
               </div>
             </div>
 

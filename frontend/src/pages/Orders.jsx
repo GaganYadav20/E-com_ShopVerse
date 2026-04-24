@@ -72,7 +72,7 @@ export default function Orders() {
                     <span className={`px-3 py-1 rounded-lg text-xs font-bold ${status.color}`}>
                       {status.label}
                     </span>
-                    <span className="text-lg font-bold gradient-text">${order.totalAmount?.toFixed(2)}</span>
+                    <span className="text-lg font-bold gradient-text">₹{order.totalAmount?.toFixed(2)}</span>
                   </div>
                 </div>
 
@@ -92,11 +92,11 @@ export default function Orders() {
                             {item.productName}
                           </Link>
                           <p className="text-xs text-dark-500 mt-0.5">
-                            Qty: {item.quantity} × ${item.price?.toFixed(2)}
+                            Qty: {item.quantity} × ₹{item.price?.toFixed(2)}
                           </p>
                         </div>
                         <span className="text-sm font-medium text-dark-200">
-                          ${(item.quantity * item.price)?.toFixed(2)}
+                          ₹{(item.quantity * item.price)?.toFixed(2)}
                         </span>
                       </div>
                     ))}
